@@ -1,6 +1,6 @@
 create or alter PROCEDURE SP_update_fasciaOraria as
 MERGE DWH_D_FasciaOraria as T
-USING N_FasciaOraria as S
+USING AC_FasciaOraria as S
 on S.CodiceFasciaOraria = T.codiceFasciaOraria
 
 when matched
